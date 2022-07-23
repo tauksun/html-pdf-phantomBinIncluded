@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tauksun/html-pdf-phantom-included.git"
+    "url": "git://github.com/tauksun/html-pdf-phantomBinIncluded.git"
   },
   "keywords": [
     "html",
@@ -38,7 +38,7 @@
     "nodejs"
   ],
   "bugs": {
-    "url": "https://github.com/tauksun/html-pdf-phantom-included.git/issues"
+    "url": "https://github.com/tauksun/html-pdf-phantomBinIncluded.git/issues"
   },
-  "homepage": "https://github.com/tauksun/html-pdf-phantom-included.git"
+  "homepage": "https://github.com/tauksun/html-pdf-phantomBinIncluded.git"
 }
