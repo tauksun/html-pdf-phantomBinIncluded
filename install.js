@@ -14,7 +14,7 @@ try {
     __dirname,
     `./phantom-binary/phantomjs${fileExtension}`
   );
-  fs.chmodSync(binaryPath);
+  fs.chmodSync(binaryPath,00111);
   console.log("Successfully made phantomjs executable");
 } catch (error) {
   console.log(
