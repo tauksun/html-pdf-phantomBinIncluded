@@ -1,0 +1,44 @@
+{
+  "name": "html-pdf-phantomjs-included",
+  "version": "1.0.0",
+  "description": "HTML to PDF converter that uses phantomjs, included in source",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "html-pdf": "bin/index.js"
+  },
+  "scripts": {
+    "install": "node install.js",
+    "test": "standard && tape test/index.js examples/*/test.js"
+  },
+  "forkedBy":"tauksun",
+  "author": "Marc Bachmann",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^5.1.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.2.2"
+  },
+  "optionalDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tauksun/html-pdf-phantom-included.git"
+  },
+  "keywords": [
+    "html",
+    "pdf",
+    "phantom",
+    "phantomjs",
+    "nodejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/tauksun/html-pdf-phantom-included.git/issues"
+  },
+  "homepage": "https://github.com/tauksun/html-pdf-phantom-included.git"
+}
