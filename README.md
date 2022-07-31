@@ -1,8 +1,8 @@
 # node-html-pdf #Forked
 
-#### Forked from https://github.com/marcbachmann/node-html-pdf
+#### Forked from https://github.com/marcbachmann/node-html-pdf for linux & linux based containers
 #### Why :
-This package has phantomjs binary included & thus doesn't download it from https://github.com/Medium/phantomjs/releases/download/v2.1.1 which makes it usable even with a firewall. 
+This package has phantomjs binary included & thus doesn't download it from https://github.com/Medium/phantomjs/releases/download/v2.1.1 which makes it usable even with a FIREWALL. 
 
 ## HTML to PDF converter that uses phantomjs
 ![image](examples/businesscard/businesscard.png)  
@@ -17,22 +17,22 @@ Have a look at the releases page: https://github.com/marcbachmann/node-html-pdf/
 
 ## Installation
 
-Install the html-pdf utility via [npm](http://npmjs.org/):
+Install the html-pdf-phantomjs-included utility via [npm](http://npmjs.org/):
 
 ```
-$ npm install -g html-pdf
+$ npm i html-pdf-phantomjs-included
 ```
 
 ## Command-line example
 
 ```
-$ html-pdf test/businesscard.html businesscard.pdf
+$ html-pdf-phantomjs-included test/businesscard.html businesscard.pdf
 ```
 
 ## Code example
 ```javascript
 var fs = require('fs');
-var pdf = require('html-pdf');
+var pdf = require('html-pdf-phantomjs-included');
 var html = fs.readFileSync('./test/businesscard.html', 'utf8');
 var options = { format: 'Letter' };
 
@@ -45,7 +45,7 @@ pdf.create(html, options).toFile('./businesscard.pdf', function(err, res) {
 ## API
 
 ```js
-var pdf = require('html-pdf');
+var pdf = require('html-pdf-phantomjs-included');
 pdf.create(html).toFile([filepath, ]function(err, res){
   console.log(res.filename);
 });
@@ -66,7 +66,7 @@ pdf.create(html [, options], function(err, buffer){});
 
 ### Footers and Headers
 
-`html-pdf` can read the header or footer either out of the `footer` and `header` config object or out of the html source. You can either set a default header & footer or overwrite that by appending a page number (1 based index) to the `id="pageHeader"` attribute of a html tag.
+`html-pdf-phantomjs-included` can read the header or footer either out of the `footer` and `header` config object or out of the html source. You can either set a default header & footer or overwrite that by appending a page number (1 based index) to the `id="pageHeader"` attribute of a html tag.
 
 You can use any combination of those tags. The library tries to find any element, that contains the `pageHeader` or `pageFooter` id prefix.
 ```html
